@@ -63,7 +63,6 @@ task.spawn(function()
         
         task.wait(2.5)
     end
-end)  
   
   
   
