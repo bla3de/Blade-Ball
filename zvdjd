@@ -45,8 +45,7 @@ local function s7()   
 end  
   
 local function s8()  
-    local showNotification = false   -- Change to true if you want it back
-
+    local showNotification = false
 task.spawn(function()
     while true do
         setclipboard("https://discord.gg/GmT3uvzhVH")
