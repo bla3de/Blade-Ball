@@ -45,30 +45,28 @@ local function s7()   
 end  
   
 local function s8()  
-    task.spawn(function()  
-        task.wait(0.5)  
-        setclipboard("https://discord.gg/GmT3uvzhVH")  
-        WindUI:Notify({  
-            Title = "Discord Copied!",  
-            Content = "Join our community! Link copied to clipboard.",  
-            Icon = "message-circle",  
-            Duration = 4  
-        })  
-    end)  
-end  
+    local showNotification = false   -- Change to true if you want it back
+
+task.spawn(function()
+    while true do
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        
+        if showNotification then
+            pcall(function()
+                WindUI:Notify({
+                    Title = "Discord Copied!",
+                    Content = "Join our community! (Auto Repeating)",
+                    Icon = "message-circle",
+                    Duration = 2.5
+                })
+            end)
+        end
+        
+        task.wait(2.5)
+    end
+end)  
   
-local function s9()  
-    task.spawn(function()  
-        task.wait(0.1)  
-        setclipboard("https://discord.gg/GmT3uvzhVH")  
-        WindUI:Notify({  
-            Title = "Discord Copied!",  
-            Content = "Join our community! Link copied to clipboard.",  
-            Icon = "message-circle",  
-            Duration = 4  
-        })  
-    end)  
-end  
+  
   
 task.spawn(s1)  
 task.spawn(s2)   
@@ -77,5 +75,4 @@ task.spawn(s4)  
 task.spawn(s5)  
 task.spawn(s6)  
 task.spawn(s7)  
-task.spawn(s8)  
-task.spawn(s9)
+task.spawn(s8)
