@@ -417,11 +417,11 @@ end)
 
 -- Rayfield Menu
 local Window = Rayfield:CreateWindow({
-    Name = "🔪 EXODUS HUB | MM2",
-    LoadingTitle = "by @exodusstk",
+    Name = "🔪 ZENX HUB | MM2",
+    LoadingTitle = "by @1v2c",
     ConfigurationSaving = {
         Enabled = true,
-        FolderName = "ExodusConfigs",
+        FolderName = "ZENXConfigs",
         FileName = "MM2_Final"
     }
 })
