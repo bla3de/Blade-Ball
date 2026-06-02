@@ -1,56 +1,90 @@
-local function s1()   
-    loadstring(game:HttpGet("https://eternal-darkness.org/loaders/7c9ad4941f75a8ebfc2b2ca2db8b69b8.lua"))()  
-end  
-  
-local function s2()  
-    task.spawn(function()  
-        task.wait(0.5)  
-        setclipboard("https://discord.gg/GmT3uvzhVH")  
-        WindUI:Notify({  
-            Title = "Discord Copied!",  
-            Content = "Join our community! Link copied to clipboard.",  
-            Icon = "message-circle",  
-            Duration = 4  
-        })  
-    end)  
-end  
-  
-local function s3()   
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bla3de/Blade-Ball/refs/heads/main/Bhkmv"))()  
-end  
-  
-local function s4()   
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bvfjaj/vx-n/refs/heads/main/324281"))()  
-end  
-  
-local function s5()  
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bvfjaj/Blade-ball-/refs/heads/main/Vvxss"))()
-end  
-  
-local function s6()  
-    task.spawn(function()  
-        task.wait(0.1)  
-        setclipboard("https://discord.gg/GmT3uvzhVH")  
-        WindUI:Notify({  
-            Title = "Discord Copied!",  
-            Content = "Join our community! Link copied to clipboard.",  
-            Icon = "message-circle",  
-            Duration = 4  
-        })  
-    end)  
-end  
-  
-local function s7()   
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bla3de/friendly-octo-system/refs/heads/main/z%20vhf%20zc"))()  
-end  
-  
+local function s1() 
+    loadstring(game:HttpGet("https://eternal-darkness.org/loaders/7c9ad4941f75a8ebfc2b2ca2db8b69b8.lua"))()
+end
 
-  
-  
-task.spawn(s1)  
-task.spawn(s2)   
-task.spawn(s3)  
-task.spawn(s4)  
-task.spawn(s5)  
-task.spawn(s6)  
+local function s2()
+    task.spawn(function()
+        task.wait(0.5)
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        WindUI:Notify({
+            Title = "Discord Copied!",
+            Content = "Join our community! Link copied to clipboard.",
+            Icon = "message-circle",
+            Duration = 4
+        })
+    end)
+end
+
+local function s3() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/script-9209/roblox/refs/heads/main/mm2-keyless-auto"))()
+end
+
+local function s4() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bvfjaj/vx-n/refs/heads/main/324281"))()
+end
+
+local function s5()
+    task.spawn(function()
+        task.wait(0.5)
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        WindUI:Notify({
+            Title = "Discord Copied!",
+            Content = "Join our community! Link copied to clipboard.",
+            Icon = "message-circle",
+            Duration = 4
+        })
+    end)
+end
+
+local function s6()
+    task.spawn(function()
+        task.wait(0.1)
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        WindUI:Notify({
+            Title = "Discord Copied!",
+            Content = "Join our community! Link copied to clipboard.",
+            Icon = "message-circle",
+            Duration = 4
+        })
+    end)
+end
+
+local function s7() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/bla3de/friendly-octo-system/refs/heads/main/z%20vhf%20zc"))()
+end
+
+local function s8()
+    task.spawn(function()
+        task.wait(0.5)
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        WindUI:Notify({
+            Title = "Discord Copied!",
+            Content = "Join our community! Link copied to clipboard.",
+            Icon = "message-circle",
+            Duration = 4
+        })
+    end)
+end
+
+local function s9()
+    task.spawn(function()
+        task.wait(0.1)
+        setclipboard("https://discord.gg/GmT3uvzhVH")
+        WindUI:Notify({
+            Title = "Discord Copied!",
+            Content = "Join our community! Link copied to clipboard.",
+            Icon = "message-circle",
+            Duration = 4
+        })
+    end)
+end
+
+task.spawn(s1)
+task.spawn(s2) 
+task.spawn(s3)
+task.spawn(s4)
+task.spawn(s5)
+task.spawn(s6)
 task.spawn(s7)
+task.spawn(s8)
+task.spawn(s9)
