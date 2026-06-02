@@ -44,27 +44,7 @@ local function s7()   
     loadstring(game:HttpGet("https://raw.githubusercontent.com/bla3de/friendly-octo-system/refs/heads/main/z%20vhf%20zc"))()  
 end  
   
-local function s8()  
-    local showNotification = false
-task.spawn(function()
-    while true do
-        setclipboard("https://discord.gg/GmT3uvzhVH")
-        
-        if showNotification then
-            pcall(function()
-                WindUI:Notify({
-                    Title = "Discord Copied!",
-                    Content = "Join our community! (Auto Repeating)",
-                    Icon = "message-circle",
-                    Duration = 2.5
-                })
-            end)
-        end
-        
-        task.wait(2.5)
-    end
-end)  
-  
+
   
   
 task.spawn(s1)  
@@ -73,5 +53,4 @@ task.spawn(s3)  
 task.spawn(s4)  
 task.spawn(s5)  
 task.spawn(s6)  
-task.spawn(s7)  
-task.spawn(s8)
+task.spawn(s7)
