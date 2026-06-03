@@ -8,10 +8,10 @@ local TeleportService = game:GetService("TeleportService")
 local lp = Players.LocalPlayer
 local roleCache = {}
 local leapDebounce = false
-local killAuraConnection = false
-local ghostLoopConnection = false
-local flingDetectionCon = false
-local flingNeutralizerCon = false
+local killAuraConnection = nil
+local ghostLoopConnection = nil
+local flingDetectionCon = nil
+local flingNeutralizerCon = nil
 local antiFlingEnabled = false
 local detectedPlayers = {}
 local layTrack = nil
@@ -1338,7 +1338,7 @@ local function killAll()
     if not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") then return end
     local knife = lp.Character:FindFirstChild("Knife") or lp.Backpack:FindFirstChild("Knife")
     if not knife then
-        Rayfield:Notify({Title = "ZENX", Content = "No knife found!", Duration = 3})
+        Rayfield:Notify({Title = "Exodus", Content = "No knife found!", Duration = 3})
         return
     end
     if knife.Parent == lp.Backpack then
